@@ -25,6 +25,7 @@ The designs were created to the following widths:
 ### Body Copy
 
 - Font size (paragraph): 14px
+- Font size (title/price): 32px
 
 ### Font
 

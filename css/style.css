@@ -1,0 +1,116 @@
+/******************************/
+/* GENERAL */
+/******************************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Fraunces", sans-serif;
+  background-color: hsl(26, 40%, 92%);
+}
+
+/******************************/
+/* COMPONENT */
+/******************************/
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  width: 600px;
+  height: 450px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 25%);
+}
+
+.card--details {
+  margin: 30px;
+  margin-top: 70px;
+}
+
+.img {
+  width: 300px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: hsl(228, 12%, 48%);
+  margin-top: 25px;
+}
+
+.card--price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.original-price {
+  color: hsl(158, 36%, 37%);
+  font-size: 32px;
+}
+
+.discounted-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  margin-right: 40px;
+}
+
+.btn-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  padding: 17px 70px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn-cta:hover,
+.btn-cta:active {
+  cursor: pointer;
+  background-color: hsl(212, 21%, 14%);
+}
+
+.add {
+  padding-left: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 4250%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
