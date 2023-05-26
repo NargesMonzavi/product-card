@@ -1,0 +1,56 @@
+/********************************/
+/* BELOW 375px (mobile) */
+/********************************/
+
+@media (max-width: 376px) {
+  body {
+    position: static;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+
+    height: 650px;
+    width: 330px;
+
+    top: 13%;
+    left: 80%;
+    transform: translate(-90%, -13%);
+
+    margin: 10px 20px;
+  }
+
+  .img1 {
+    display: none;
+  }
+
+  .img2 {
+    display: block;
+    width: 330px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .discounted-price {
+    margin-right: 80px;
+  }
+
+  .btn-cta {
+    width: 270px;
+  }
+
+  .attribution {
+    top: -49%;
+    left: 50%;
+  }
+}

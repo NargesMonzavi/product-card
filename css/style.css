@@ -34,21 +34,38 @@ body {
   transform: translate(-50%, 25%);
 }
 
+.img1 {
+  width: 300px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.img2 {
+  display: none;
+}
+
 .card--details {
   margin: 30px;
   margin-top: 70px;
 }
 
-.img {
-  width: 300px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
 .title {
+  position: relative;
   font-size: 32px;
   font-weight: 700;
   line-height: 1;
+}
+
+.title::before {
+  position: absolute;
+  top: -35px;
+  left: 0px;
+
+  content: "perfume";
+  color: hsl(228, 12%, 48%);
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .description {
